@@ -2,9 +2,13 @@
 <table class="alt">
   <thead>
     <tr>
-      <th>Id</th>
+      <!-- <th>Id</th> -->
       <th>Nome</th>
-      <th>Phone</th>
+      <th>Email</th>
+      <th>Data de Nascimento</th>
+      <th>Endereço</th>
+      <th>Telefone</th>
+      <th>Senha</th>
     </tr>
   </thead>
   <tbody>
@@ -13,9 +17,13 @@
       *ngFor="let menber of menbers"
       (click)="menberClicked(menber)"
     >
-      <td>{{ menber.id }}</td>
+      <!-- <td>{{ menber.id }}</td> -->
       <td>{{ menber.name }} {{ menber.surname }}</td>
+      <td>{{ menber.email }}</td>
+      <td>{{ menber.d_nasc }}</td>
+      <td>{{ menber.andress }}</td>
       <td>{{ menber.phone }}</td>
+      <td>{{ menber.senha }}</td>
     </tr>
   </tbody>
 </table>

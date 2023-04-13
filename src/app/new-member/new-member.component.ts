@@ -9,7 +9,15 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./new-member.component.css'],
 })
 export class NewMemberComponent implements OnInit {
-  menber = { name: '', surname: '', phone: '' };
+  menber = {
+    name: '',
+    surname: '',
+    email: '',
+    phone: '',
+    d_nasc: '',
+    andress: '',
+    senha: '',
+  };
 
   constructor(private api: ApiService, private appComponent: AppComponent) {}
 

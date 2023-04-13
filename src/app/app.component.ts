@@ -9,13 +9,27 @@ import { Router } from '@angular/router';
 export class AppComponent {
   title = 'front angular';
   // // exibir na mesma tale
-  selected_menber = { id: 0, name: '', surname: '', phone: '' };
+  selected_menber = {
+    id: 0,
+    name: '',
+    surname: '',
+    email: '',
+    phone: '',
+    d_nasc: '',
+    andress: '',
+    senha: '',
+  };
+
   menbers = [
     {
       name: 'Member 01',
       id: 1,
       surname: 'Ciclano',
       phone: '1234',
+      email: 'nni@ii.com.br',
+      d_nasc: '07/05/1995',
+      andress: 'jjbhi ',
+      senha: 'bbddb',
       photo: 'http://www.minhaapp.com/photo3',
     },
     {
@@ -23,12 +37,20 @@ export class AppComponent {
       id: 2,
       surname: 'Beltrano',
       phone: '1234',
+      email: 'nni@ii.com.br',
+      d_nasc: '07/05/1995',
+      andress: 'jjbhi ',
+      senha: 'bbddb',
       photo: 'http://www.minhaapp.com/photo3',
     },
     {
       name: 'Member 03',
       id: 3,
       surname: 'Fulano',
+      email: 'nni@ii.com.br',
+      d_nasc: '07/05/1995',
+      andress: 'jjbhi ',
+      senha: 'bbddb',
       phone: '123',
 
       photo: 'http://www.minhaapp.com/photo3',

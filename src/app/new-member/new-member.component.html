@@ -3,10 +3,23 @@
 <!-- novo formulario  -->
 <!-- não deixa alterar o campo  -->
 
-<label for="">Nome:</label>
+<label for="">Nome Completo:</label>
 <input type="text" [(ngModel)]="menber.name" /><br />
 <label for="">Sobrenome:</label>
 <input type="text" [(ngModel)]="menber.surname" /> <br />
+<label for="">Email:</label>
+<input type="text" [(ngModel)]="menber.email" /><br />
+
+<label for="">Data de Nascimento:</label>
+<input type="text" [(ngModel)]="menber.d_nasc" /><br />
+
+<label for="">Endereço:</label>
+<input type="text" [(ngModel)]="menber.andress" /><br />
+
 <label for="">Telefone:</label>
 <input type="text" [(ngModel)]="menber.phone" /><br />
+
+<label for="">Senha:</label>
+<input type="text" [(ngModel)]="menber.senha" /><br />
+
 <button (click)="save()">Salvar Novo Membro</button>
