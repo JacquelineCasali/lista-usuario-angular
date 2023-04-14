@@ -1,4 +1,5 @@
-<h1>Membros</h1>
+<h1>Lista de Usuários</h1>
+
 <table class="alt">
   <thead>
     <tr>
@@ -8,6 +9,7 @@
       <th>Data de Nascimento</th>
       <th>Endereço</th>
       <th>Telefone</th>
+
       <th>Senha</th>
     </tr>
   </thead>
@@ -18,12 +20,15 @@
       (click)="menberClicked(menber)"
     >
       <!-- <td>{{ menber.id }}</td> -->
-      <td>{{ menber.name }} {{ menber.surname }}</td>
-      <td>{{ menber.email }}</td>
-      <td>{{ menber.d_nasc }}</td>
-      <td>{{ menber.andress }}</td>
-      <td>{{ menber.phone }}</td>
-      <td>{{ menber.senha }}</td>
+      <td class="fw-bold">{{ menber.name }} {{ menber.surname }}</td>
+      <td data-title="Email">{{ menber.email }}</td>
+      <td data-title="Data de Nascimento">{{ menber.d_nasc }}</td>
+      <td data-title="Endereço">{{ menber.andress }}</td>
+      <td data-title="Telefone">{{ menber.phone }}</td>
+      <td data-title="Senha">{{ menber.senha }}</td>
+      <td></td>
+
+      <br />
     </tr>
   </tbody>
 </table>
