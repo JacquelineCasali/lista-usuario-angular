@@ -1,0 +1,41 @@
+<h1>Lista de Usuários</h1>
+<div class="table-container">
+  <table class="alt">
+    <thead>
+      <tr>
+        <!-- <th>Id</th> -->
+        <th>Nome</th>
+        <th>Email</th>
+        <th>Data de Nascimento</th>
+        <th>Endereço</th>
+        <th>Telefone</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        style="cursor: pointer"
+        *ngFor="let menber of menbers"
+        (click)="menberClicked(menber)"
+      >
+        <!-- <td>{{ menber.id }}</td> -->
+        <td class="fw-bold">{{ menber.name }} {{ menber.surname }}</td>
+        <td data-title="Email">{{ menber.email }}</td>
+        <td data-title="Data de Nascimento">{{ menber.d_nasc }}</td>
+        <td data-title="Endereço">{{ menber.andress }}</td>
+        <td data-title="Telefone">{{ menber.phone }}</td>
+
+        <td class="table-actions">
+          <a
+            href="member-detail/{{ menber.id }}
+           "
+            class="table-link-show"
+            >Visualizar</a
+          >
+        </td>
+
+        <br />
+      </tr>
+    </tbody>
+  </table>
+</div>
+<router-outlet></router-outlet>

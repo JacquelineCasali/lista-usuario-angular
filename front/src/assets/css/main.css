@@ -1,0 +1,483 @@
+/* Basic */
+@import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+
+  /* width: 100%; */
+}
+
+body {
+  background-color: #935d8c;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-size: 17pt;
+  font-weight: 300;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+body,
+input {
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-size: 17pt;
+  font-weight: 300;
+  line-height: 1.65;
+}
+
+/* Wrapper */
+
+#wrapper {
+  width: 100%;
+  max-width: calc(100% - 8em);
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  display: block;
+}
+
+#header {
+  text-align: center;
+  padding: 5em 5em 1em 5em;
+  margin: 0 0 0.25em 0;
+}
+
+#header h1 {
+  margin: 0 0 0.25em 0;
+}
+h1 {
+  font-size: 2.5em;
+}
+h1,
+h2,
+h3 {
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0 0 0.7em 0;
+  letter-spacing: -0.025em;
+}
+
+h1,
+h2,
+h3 {
+  color: #ffffff;
+}
+
+h2,
+h3 {
+  font-size: 1.25em;
+}
+section {
+  display: block;
+}
+/* main */
+#main {
+  background-color: #ffffff;
+  color: #636363;
+  border-radius: 0.25em;
+}
+#main a:hover,
+#main h1,
+#main h2 {
+  color: #636363;
+}
+
+#main > .main {
+  padding: 5em 5em 5em 5em;
+  border-top: solid 1px #dddddd;
+}
+
+#main > .main:first-child {
+  border-top: 0;
+}
+
+#main tabela thead {
+  border-bottom-color: #dddddd;
+}
+
+#main table tbody tr {
+  border-color: #dddddd;
+}
+
+#main table tbody tr:nth-child(2n + 1) {
+  background-color: rgba(222, 222, 222, 0.25);
+}
+#main table th {
+  color: #636363;
+}
+
+#main table.alt tbody tr td {
+  border-color: #dddddd;
+}
+
+/* tabela */
+
+#main .table-container {
+  overflow-x: auto;
+}
+
+table {
+  margin: 0 0 2em 0;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+table tbody tr {
+  border: solid 1px;
+  border-left: 0;
+  border-right: 0;
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+table td {
+  padding: 0.75em 0.75em;
+}
+
+table th {
+  font-size: 0.9em;
+  font-weight: 400;
+  padding: 0 0.75em 0.75em 0.75em;
+  text-align: left;
+  color: #ffffff;
+}
+tabela thead {
+  border-bottom: solid 2px;
+  border-bottom-color: rgba(255, 255, 255, 0.35);
+}
+table tfoot {
+  border-top: solid 2px;
+  border-top-color: rgba(255, 255, 255, 0.35);
+}
+
+table.alt {
+  border-collapse: separate;
+}
+
+table.alt tbody tr td {
+  border: solid 1px;
+  border-left-width: 0;
+  border-top-width: 0;
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+table.alt tbody tr td:first-child {
+  border-left-width: 1px;
+}
+table.alt tbody tr:first-child td {
+  border-top-width: 1px;
+}
+
+table.alt thead {
+  border-bottom: 0;
+}
+
+table.alt tfoot {
+  border-top: 0;
+}
+
+table tbody tr:nth-child(2n + 1) {
+  background-color: rgba(255, 255, 255, 0.075);
+}
+
+#footer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5em 5em 3em 5em;
+  width: calc(100% + 2em);
+  margin: 0 0 3em -2em;
+}
+#footer .copyright {
+  width: 100%;
+  margin: 2.5em 0 2em 0;
+  font-size: 1em;
+  text-align: center;
+  color: #ffff;
+}
+a {
+  color: black;
+}
+
+/* detalhe lista */
+/* label detalhe do membro */
+
+label {
+  display: block;
+  font-size: 0.9em;
+  font-weight: 400;
+  margin: 0;
+  color: #ffffff;
+}
+
+input[type="text"] {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  border-radius: 8px;
+  border: solid 1px;
+  color: inherit;
+  display: block;
+  outline: 0;
+  padding: 0 1em;
+  text-decoration: none;
+  width: 100%;
+  height: 2.75em;
+}
+
+input[type="text"]:invalid {
+  box-shadow: none;
+}
+
+input[type="text"]:focus {
+  border-color: #8cc9f0;
+  box-shadow: 0 0 0 1px #8cc9f0;
+}
+
+#main label {
+  color: #636363;
+}
+#main input {
+  color: #636363;
+}
+#main input[type="text"] {
+  background-color: rgba(222, 222, 222, 0.25);
+  border-color: #dddddd;
+}
+#main input[type="text"]:focus {
+  border-color: #8cc9f0;
+  box-shadow: 0 0 0 1px #8cc9f0;
+}
+/* Button */
+
+button,
+.button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  border-radius: 8px;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 300;
+  height: 2.75em;
+  line-height: 2.75em;
+  min-width: 9.25em;
+  padding: 0 1.5em;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  margin-right: 10px;
+}
+
+button,
+.button {
+  background-color: transparent;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.35);
+  color: #ffffff !important;
+}
+#main button,
+#main .button {
+  background-color: transparent;
+  box-shadow: inset 0 0 0 1px #dddddd;
+  color: #636363 !important;
+}
+
+/*  button adicionar membro */
+
+#main input[type="button"].primary,
+#main button.primary,
+#main .button.primary {
+  background-color: #8cc9f0;
+  color: #ffffff !important;
+  box-shadow: none;
+}
+#main input[type="submit"].primary:hover,
+#main input[type="reset"].primary:hover,
+#main input[type="button"].primary:hover,
+#main button.primary:hover,
+#main .button.primary:hover {
+  background-color: #9acff2;
+}
+#main input[type="submit"].primary:active,
+#main input[type="reset"].primary:active,
+#main input[type="button"].primary:active,
+#main button.primary:active,
+#main .button.primary:active {
+  background-color: #7ec3ee;
+}
+
+#main input[type="submit"]:hover,
+#main input[type="reset"]:hover,
+#main input[type="button"]:hover,
+#main button:hover,
+#main .button:hover {
+  background-color: rgba(222, 222, 222, 0.25);
+}
+
+#main input[type="submit"].icon:before,
+#main input[type="reset"].icon:before,
+#main input[type="button"].icon:before,
+#main button.icon:before,
+#main .button.icon:before {
+  color: rgba(99, 99, 99, 0.25);
+}
+/* salvar membro */
+
+@media screen and (max-width: 480px) {
+  body,
+  input {
+    font-size: 12px;
+  }
+
+  #header {
+    padding: 3em 1.5em 0.1em 1.5em;
+  }
+  /* 
+  #wrapper {
+    max-width: calc(100% - 0.5em);
+  } */
+  /* table {
+    width: 20%;
+  } */
+  table thead {
+    display: none;
+  }
+  table td {
+    display: flex;
+    justify-content: space-between;
+  }
+  table td {
+    display: block;
+  }
+  table td:first-of-type {
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+    display: block;
+  }
+  table td:not(:first-of-type):before {
+    content: attr(data-title);
+    display: block;
+    font-weight: bold;
+  }
+  table.alt tbody tr td {
+    border: solid 1px;
+  }
+  #main table tbody tr:nth-child(2n + 1) {
+    background-color: rgba(255, 255, 255, 0.35);
+  }
+  #footer {
+    padding: 2.5em 1em 0.5em 1em;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  #header {
+    padding: 1em 2em 0.1em 1em;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+  #main > .main {
+    padding: 2em 1em 2em 1em;
+  }
+  /* #wrapper {
+    max-width: calc(100% - 0.1em);
+  } */
+  #footer {
+    padding: 3em 2em 1em 2em;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  body,
+  input {
+    font-size: 14px;
+  }
+  #header {
+    padding: 4em 4em 0.1em 4em;
+  }
+
+  input {
+    font-size: 12pt;
+  }
+
+  #footer {
+    padding: 4em 3em 2em 3em;
+    display: block;
+    margin: 0 0 3em 0;
+    width: 100%;
+  }
+  #footer .copyright {
+    text-align: left;
+  }
+}
+.image {
+  border-radius: 8px;
+  border: 0;
+  display: inline-block;
+  position: relative;
+}
+.image img {
+  border-radius: 8px;
+  display: block;
+}
+
+.image.left,
+.image.right {
+  max-width: 40%;
+}
+
+/* pagina member detlais */
+
+/* Image */
+
+.image.left img,
+.image.right img {
+  width: 100%;
+}
+
+.image.left {
+  float: left;
+  margin: 0 1.5em 1em 0;
+  top: 0.25em;
+}
+
+.image.right {
+  float: right;
+  margin: 0 0 1em 1.5em;
+  top: 0.25em;
+}
+
+.image.fit {
+  display: block;
+  margin: 0 0 2em 0;
+  width: 100%;
+}
+
+.image.fit img {
+  width: 100%;
+}
+
+.image.main {
+  display: block;
+  margin: 0 0 3em 0;
+  width: 100%;
+}
+
+.image.main img {
+  width: 100%;
+}
