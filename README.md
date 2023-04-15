@@ -3,8 +3,9 @@
 Esse é um projeto que mostra uma tabela com os usuários onde clicando no usuário abre um formulário onde pode Atualizar , deletar ou criar um usuário novo.
 Esse projeto foi desenvolvido em Angular Python
 clone o repositório completo :
-git clone
-
+ 
+ ##git clone
+https://github.com/JacquelineCasali/lista-usuario-angular.git
 # Requisitos e Linguagem Utilizada
 
 Python 3.8
@@ -34,8 +35,13 @@ Acessar o navegador no enderço que apareçe no terminal
 ng serve no navegador acesse
 http://localhost:4200/
 
-# Video do projeto
+# Foto do projeto
 
 Lista de Usuários
+![2023-04-15_163917](https://user-images.githubusercontent.com/103325619/232250210-a6b0af2e-26de-4144-8fc6-f677b3ce90ec.png)
+# Video do projet
+
+https://user-images.githubusercontent.com/103325619/232250355-2d3ed23a-acea-43a2-84c8-55eab8130b9f.mp4
+
 
 <br>
