@@ -1,4 +1,4 @@
-<h1>Lista de Usuários</h1>
+<h3>Lista de Usuários</h3>
 <div class="table-container">
   <table class="alt">
     <thead>
@@ -18,11 +18,15 @@
         (click)="menberClicked(menber)"
       >
         <!-- <td>{{ menber.id }}</td> -->
-        <td class="fw-bold">{{ menber.name }} {{ menber.surname }}</td>
-        <td data-title="Email">{{ menber.email }}</td>
-        <td data-title="Data de Nascimento">{{ menber.d_nasc }}</td>
-        <td data-title="Endereço">{{ menber.andress }}</td>
-        <td data-title="Telefone">{{ menber.phone }}</td>
+        <td width="18%" class="fw-bold">
+          {{ menber.name }} {{ menber.surname }}
+        </td>
+        <td width="5%" data-title="Email">
+          {{ menber.email }}
+        </td>
+        <td width="13%" data-title="Data de Nascimento">{{ menber.d_nasc }}</td>
+        <td width="25%" data-title="Endereço">{{ menber.andress }}</td>
+        <td width="25%" data-title="Telefone">{{ menber.phone }}</td>
 
         <td class="table-actions">
           <a

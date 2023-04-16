@@ -9,8 +9,8 @@ class MenberViewSet(viewsets.ModelViewSet):
   
     queryset = Menber.objects.all()
     serializer_class = MenberSerializer
-    # authentication_classes=[TokenAuthentication, SessionAuthentication]
-    # permission_classes=[IsAuthenticated,]
+    authentication_classes=[TokenAuthentication, SessionAuthentication]
+    permission_classes=[IsAuthenticated,]
 
     
 #  definir o metodo listen (listagem )

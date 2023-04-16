@@ -8,11 +8,12 @@ import { Observable } from 'rxjs';
 })
 export class ApiService {
   baseUrl = 'http://localhost:8000/';
-  token = 'Token 2f83c7f763f9ec06a3aa05f52d901af2f00d9c5f';
+  token = 'Token e887b567aa1450048ddae4d3527b7a092169a083';
   httpHeaders = new HttpHeaders()
     .set(
       // 'Content-Type',
       // 'applications/json'
+
       'X-CSRFToken',
       'csrftoken'
     )
